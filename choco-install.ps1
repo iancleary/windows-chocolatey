@@ -62,3 +62,6 @@ choco install terraform -y
 # Python3
 choco install python3 -y
 choco install vscode-python -y
+
+# Spotify
+choco install spotify -y
