@@ -48,7 +48,10 @@ choco install powershell-core -y
 choco install vscode -y
 
 # Git: Should be hard to avoid needing this at work
-choco install git.install -y --force --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf /WindowsTerminal /WindowsTerminalProfile /DefaultBranchName:main /Editor:VisualStudioCode"
+choco install git.install -y --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf /WindowsTerminal /WindowsTerminalProfile /DefaultBranchName:main /Editor:VisualStudioCode"
+
+# GitHub CLI
+choco install gh -y
 
 # GPG4Win
 choco install gpg4win -y
