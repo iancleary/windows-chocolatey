@@ -32,36 +32,48 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 ### Install things with chocolatey!
+
+# Allow global confirmation so I don't have to have '-y' everywhere in this script
+choco feature enable -n=allowGlobalConfirmation
+
 ## Search from terminal: choco search <package>
 ## View locally installed choco packages: choco list --local-only
 ## Search visually on site: https://chocolatey.org/packages
 ## I like installing the below packages, for example
 
 # Windows Terminal: Huge improvement over native tooling
-choco install microsoft-windows-terminal -y
+choco install microsoft-windows-terminal
 
 # PowerShell Core: Latest PowerShell, can sit ontop of Windows PowerShell
 ## run with pwsh.exe or in Microsoft Terminal when installed
-choco install powershell-core -y
+choco install powershell-core
 
 # Visual Studio Code: Cross-platform IDE of choice for me
-choco install vscode -y
+choco install vscode
+choco install vscode-icons
+choco install vscode-markdownlint
+
+# Command Line tools
+choco install wget
 
 # Git: Should be hard to avoid needing this at work
-choco install git.install -y --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf /WindowsTerminal /WindowsTerminalProfile /DefaultBranchName:main /Editor:VisualStudioCode"
+choco install git.install --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf /WindowsTerminal /WindowsTerminalProfile /DefaultBranchName:main /Editor:VisualStudioCode"
 
 # GitHub CLI
-choco install gh -y
+choco install gh
 
 # GPG4Win
-choco install gpg4win -y
+choco install gpg4win
 
 # Terraform
-choco install terraform -y
+choco install terraform
 
 # Python3
-choco install python3 -y
-choco install vscode-python -y
+choco install python3
+choco install vscode-python
 
 # Spotify
-choco install spotify -y
+choco install spotify
+
+# Greenshot
+choco install greenshot
