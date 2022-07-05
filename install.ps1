@@ -53,6 +53,11 @@ choco install vscode
 choco install vscode-icons
 choco install vscode-markdownlint
 
+# Docker
+choco install Containers Microsoft-Hyper-V --source windowsfeatures
+choco install docker-desktop
+choco install vscode-docker
+
 # Command Line tools
 choco install wget
 
