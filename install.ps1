@@ -77,3 +77,6 @@ choco install spotify
 
 # Greenshot
 choco install greenshot
+
+# Path Copy Copy
+choco install path-copy-copy
