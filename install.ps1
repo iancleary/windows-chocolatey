@@ -48,6 +48,9 @@ choco install microsoft-windows-terminal
 ## run with pwsh.exe or in Microsoft Terminal when installed
 choco install powershell-core
 
+# Powertoys
+choco install powertoys
+
 # Visual Studio Code: Cross-platform IDE of choice for me
 choco install vscode
 choco install vscode-icons
